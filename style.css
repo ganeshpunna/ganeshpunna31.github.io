@@ -1,0 +1,137 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff704d;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.input-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.input-section input {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ff704d;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff704d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background-color: #e65c3d;
+}
+
+.recipes-section, .tips-section {
+    background-color: #fff3e6;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.recipes-section h2, .tips-section h2 {
+    margin-bottom: 1rem;
+    color: #ff704d;
+}
+
+#recipeResults {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.recipe-card:hover {
+    transform: scale(1.03);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    color: #ff704d;
+    margin: 10px;
+}
+
+.recipe-card p {
+    margin: 10px;
+    font-size: 0.95rem;
+}
+
+.highlight {
+    background-color: #ffeb99;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Procedure styling */
+.recipe-procedure {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fffbe6;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    display: none; /* Hidden by default */
+}
+
+.recipe-procedure ol {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #ff704d;
+    color: white;
+}
